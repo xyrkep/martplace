@@ -69,11 +69,69 @@
 .header__user-profile {
     line-height: 22px;
     font-weight: 500;
+
     a {
         font-weight: 400;
         color: $btn;
     }
 }
+
+.header__bottom-inner {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+}
+
+.header__menu ul {
+    display: flex;
+    align-items: center;
+
+    li {
+        font-size: 15px;
+        font-weight: 500;
+        color: #333;
+        text-transform: uppercase;
+
+        & + li {
+            margin-left: 32px;
+        }
+    }
+}
+
+.header__search-form {
+    max-width: 360px;
+    width: 100%;
+    position: relative;
+
+    input {
+        font-size: 15px;
+        display: block;
+        width: 100%;
+        height: 46px;
+        border-radius: 23px;
+        border: 1px solid #d9dfe5;
+        min-width: 0;
+        padding: 16px 90px 16px 25px;
+        outline: none;
+    }
+
+    button {
+        position: absolute;
+        width: 70px;
+        height: 46px;
+        top: 0;
+        right: 0;
+        border: none;
+        border-radius: 23px;
+        background-color: $btn;
+        color: #fff;
+    }
+}
+
+
+
+
 
 
 
