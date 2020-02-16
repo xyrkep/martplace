@@ -227,7 +227,7 @@
 
     &-form {
         position: absolute;
-//        min-height: 135px;
+        //        min-height: 135px;
         max-width: 1140px;
         width: 100%;
         border-radius: 6px;
@@ -267,15 +267,44 @@
             bottom: 26px;
             z-index: -1;
         }
+
+        form {
+            width: 100%;
+        }
     }
 
     &-fields {
         padding: 40px;
+        display: flex;
     }
 
-    &-input {}
+    &-input {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #dcdcdc;
+        border-radius: 4px 0 0 4px;
+    }
 
-    &-select {}
+    &-select {
+        width: 100%;
+        padding: 12px;
+        max-width: 195px;
+        border: 1px solid #dcdcdc;
+        border-radius: 0px 4px 4px 0px;
+        border-left: none;
+        outline: none;
+        position: relative;
+        color: $text;
+
+        //        &::before {
+        //            content: '\e874';
+        //            font-family: 'Linearicons-Free';
+        //            position: absolute;
+        //            right: 15px;
+        //            top: 0;
+        //            color: #000;
+        //        }
+    }
 
     &-button {
         border-radius: 4px;
@@ -283,9 +312,48 @@
         color: #fff;
         line-height: 20px;
         margin-left: 30px;
-        padding: 18px 67px 17px;
+        padding: 17px 67px 16px;
+        white-space: nowrap;
     }
 }
 
-
 //end search section
+//start advantages section
+
+.advantages__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-box {
+        max-width: 361px;
+        height: 403px;
+        margin: 186px 0 121px;
+        text-align: center;
+        transition: all 0.3s;
+
+        &:hover {
+            box-shadow: 0 2px 50px rgba(0, 0, 0, 0.08);
+            border-radius: 4px;
+            background-color: #fff;
+        }
+
+        img {
+            padding-top: 41px;
+            margin-bottom: 30px;
+        }
+    }
+
+    &-title {
+        @include f400;
+        color: #010101;
+        font-size: 24px;
+        line-height: 32px;
+    }
+    &-text {
+        padding: 30px 35px 49px;
+        line-height: 30px;
+    }
+}
+
+//end advantages section

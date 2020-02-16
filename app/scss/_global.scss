@@ -31,7 +31,12 @@ body {
 
 button {
     cursor: pointer;
-    border: none;
+}
+
+input,
+select,
+button {
+    appearance: none;
 }
 
 .container {
