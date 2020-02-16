@@ -8,13 +8,13 @@
     <meta name="description" content="Example description">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" type="image/x-icon" href="" />
 </head>
 
 <body>
+    <!--   start header section-->
     <header class="header">
         <div class="header__top">
             <div class="container">
@@ -27,21 +27,21 @@
                             Mart<span>Place</span>
                         </div>
                     </a>
-                    <div class="header__signup-btn">
-                        <a href="#">Become a Seller</a>
+                    <div class="header__signup">
+                        <a class="header__signup-btn" href="#">Become a Seller</a>
                     </div>
                     <div class="header__user">
                         <div class="header__user-icons">
-                            <a href="#"><span class="lnr lnr-alarm"></span></a>
-                            <a href="#"><span class="lnr lnr-envelope"></span></a>
-                            <a href="#"><span class="lnr lnr-cart"></span></a>
+                            <a class="header__user-icon" href="#"><span class="lnr lnr-alarm"></span></a>
+                            <a class="header__user-icon" href="#"><span class="lnr lnr-envelope"></span></a>
+                            <a class="header__user-icon" href="#"><span class="lnr lnr-cart"></span></a>
                         </div>
                         <a class="header__user-avatar" href="#" style="background-image: url()"></a>
                         <div class="header__user-profile">
-                            <div class="user-name">
+                            <div class="header__user-name">
                                 Taofiq Hakim
                             </div>
-                            <a class="user-balance" href="#">
+                            <a class="header__user-balance" href="#">
                                 $20.45
                             </a>
                         </div>
@@ -52,19 +52,19 @@
         <div class="header__bottom">
             <div class="container">
                 <div class="header__bottom-inner">
-                    <div class="header__menu">
-                        <ul>
-                            <li><a href="#">home</a></li>
-                            <li><a href="#">all products</a></li>
-                            <li><a href="#">wordpress</a></li>
-                            <li><a href="#">features</a></li>
-                            <li><a href="#">pages</a></li>
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__list-item"><a class="menu__list-link" href="#">home</a></li>
+                            <li class="menu__list-item"><a class="menu__list-link" href="#">all products</a></li>
+                            <li class="menu__list-item"><a class="menu__list-link" href="#">wordpress</a></li>
+                            <li class="menu__list-item"><a class="menu__list-link" href="#">features</a></li>
+                            <li class="menu__list-item"><a class="menu__list-link" href="#">pages</a></li>
                         </ul>
-                    </div>
-                    <div class="header__search-form">
+                    </nav>
+                    <div class="header__search">
                         <form>
-                            <input type="text" placeholder="Search product here..." required>
-                            <button type="submit">
+                            <input class="header__search-input" type="text" placeholder="Search product here..." required>
+                            <button class="header__search-btn" type="submit">
                                 <span class="lnr lnr-magnifier"></span>
                             </button>
                         </form>
@@ -73,45 +73,51 @@
             </div>
         </div>
     </header>
+    <!--    end header section-->
+
+    <!--   start search section-->
     <section class="search">
         <div class="container">
             <div class="search__inner">
                 <div class="search__inner-content">
                     <div class="search__inner-title">
                         Create Your Own
-                    </div>
-                    <div class="search__inner-subtitle">
-                        Digital Product Marketplace
+                        <span class="search__inner-subtitle">
+                            Digital Product Marketplace
+                        </span>
                     </div>
                     <div class="search__inner-text">
                         MartPlace is the most powerful, & customizable template for Easy Digital Downloads Products
                     </div>
                 </div>
-                <div class="search__inner-btn">
-                    <a href="#" class="search__filter-btn active-btn">View All Products</a>
-                    <a href="#" class="search__filter-btn">Popular Products</a>
+                <div class="search__inner-buttons">
+                    <a href="#" class="search__inner-btn search__inner-btn_view">View All Products</a>
+                    <a href="#" class="search__inner-btn search__inner-btn_popular">Popular Products</a>
                 </div>
                 <div class="search__inner-form">
-                    <div class="search__box search__box-1"></div>
-                    <div class="search__box search__box-2"></div>
-                    <div class="search__box search__box-3">
-                        <form>
-                            <input type="text" placeholder="Search product here..." required>
-                            <button type="submit">
+                    <form>
+                        <div class="search__inner-fields">
+                            <input class="search__inner-input" type="text" placeholder="Search product here..." required>
+                            <select class="search__inner-select">
+                                <option>All Categories</option>
+                                <option>Popular Products</option>
+                                <option>New Products</option>
+                            </select>
+                            <button class="search__inner-button" type="submit">
                                 Search Now
                             </button>
-                        </form>
-                    </div>
+                        </div>
+                    </form>
                 </div>
             </div>
-
         </div>
     </section>
+    <!--    end search section-->
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/libs.min.js"></script>
-    <script type="text/javascript" src="js/main.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 
 </body>
 
