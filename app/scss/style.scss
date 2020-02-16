@@ -142,8 +142,10 @@
     &-btn {
         position: absolute;
         width: 70px;
+        height: 100%;
         padding: 14px;
         top: 0;
+        bottom: 0;
         right: 0;
         border-radius: 23px;
         background-color: $btn;
@@ -228,7 +230,6 @@
 
     &-form {
         position: absolute;
-        //        min-height: 135px;
         max-width: 1140px;
         width: 100%;
         border-radius: 6px;
@@ -475,11 +476,10 @@
         padding: 6px 18px;
     }
 
-    &-likes {
+    &-likes,
+    &-purchases {
         padding: 6px 18px;
         position: relative;
-//        margin-right: auto;
-        margin-left: 25px;
 
         &::before {
             position: absolute;
@@ -488,18 +488,13 @@
         }
     }
 
-    &-purchases {
-        padding: 6px 18px;
-        position: relative;
-        transition: all 0.3s;
-//        margin-right: auto;
-        margin-left: 10px;
+    &-likes {
+        margin-left: 25px;
+    }
 
-        &::before {
-            position: absolute;
-            font-family: 'Linearicons-Free';
-            left: -7px;
-        }
+    &-purchases {
+        transition: all 0.3s;
+        margin-left: 10px;
 
         &:hover {
             color: $btn;
@@ -507,6 +502,7 @@
     }
 
     &-rating {
+        margin-left: auto;
     }
 }
 
