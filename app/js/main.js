@@ -14,4 +14,10 @@ $(function () {
         $('.search__inner-btn_view').removeClass('search__inner-btn_active');
     });
 
+    $('.rate-star').rateYo({
+        rating: 4.5,
+        starWidth: "14px",
+        readOnly: true
+    });
+
 });

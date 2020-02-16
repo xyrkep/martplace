@@ -149,6 +149,7 @@
         background-color: $btn;
         color: #fff;
         transition: all 0.3s;
+        border: none;
 
         &:hover {
             opacity: 0.5;
@@ -295,15 +296,6 @@
         outline: none;
         position: relative;
         color: $text;
-
-        //        &::before {
-        //            content: '\e874';
-        //            font-family: 'Linearicons-Free';
-        //            position: absolute;
-        //            right: 15px;
-        //            top: 0;
-        //            color: #000;
-        //        }
     }
 
     &-button {
@@ -350,6 +342,7 @@
         font-size: 24px;
         line-height: 32px;
     }
+
     &-text {
         padding: 30px 35px 49px;
         line-height: 30px;
@@ -357,3 +350,168 @@
 }
 
 //end advantages section
+//start slider weekly featured products
+
+.weekly {
+    background-color: #eff1f5;
+
+    &__promo {
+        padding-top: 120px;
+        padding-bottom: 120px;
+
+        &-title {
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(108, 111, 115, 0.1);
+            border-radius: 4px;
+            font-size: 30px;
+            line-height: 35px;
+            padding: 38px 29px 37px;
+            margin-bottom: 50px;
+        }
+    }
+}
+
+.weekly__slider {
+    &-item {
+        display: flex;
+        justify-content: center;
+    }
+
+    &-description {
+        max-height: 450px;
+        padding: 50px 62px 24px 51px;
+        background-color: #fff;
+    }
+
+    &-title {
+        @include f500;
+        color: #000;
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+
+    &-info {
+        font-size: 15px;
+        line-height: 20px;
+        margin-bottom: 20px;
+    }
+
+    &-designer {
+        margin-right: 35px;
+        padding-left: 40px;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background-image: url(../img/slider/avatar.png);
+            top: -7px;
+            left: 0;
+        }
+    }
+
+    &-platform {
+        color: $violet;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            background-image: url(../img/slider/wp-icon.svg);
+            top: 2px;
+            left: -22px;
+        }
+    }
+
+    &-text {
+        color: #555555;
+        line-height: 30px;
+        margin-bottom: 35px;
+        height: 130px;
+        overflow: scroll;
+    }
+
+    &-tags {
+        margin-bottom: 30px;
+    }
+
+    &-tag {
+        border-radius: 14px;
+        background-color: #f1f3f6;
+        font-size: 15px;
+        line-height: 22px;
+        color: #868c96;
+        padding: 3px 15px;
+        transition: all 0.3s;
+
+        &:hover {
+            background-color: $btn;
+            color: #fff;
+        }
+    }
+
+    &-tag + &-tag {
+        margin-left: 4px;
+    }
+
+    &-data {
+        display: flex;
+        justify-content: flex-start;
+        border-top: 1px solid #ececec;
+        padding: 25px 0;
+        font-size: 15px;
+    }
+
+    &-price {
+        @include f500;
+        border-radius: 16px;
+        background-color: #0674ec;
+        color: #fff;
+        padding: 6px 18px;
+    }
+
+    &-likes {
+        padding: 6px 18px;
+        position: relative;
+//        margin-right: auto;
+        margin-left: 25px;
+
+        &::before {
+            position: absolute;
+            font-family: 'Linearicons-Free';
+            left: -5px;
+        }
+    }
+
+    &-purchases {
+        padding: 6px 18px;
+        position: relative;
+        transition: all 0.3s;
+//        margin-right: auto;
+        margin-left: 10px;
+
+        &::before {
+            position: absolute;
+            font-family: 'Linearicons-Free';
+            left: -7px;
+        }
+
+        &:hover {
+            color: $btn;
+        }
+    }
+
+    &-rating {
+    }
+}
+
+.rate-star {
+    margin-top: 7px;
+}
+
+//end slider weekly featured products
