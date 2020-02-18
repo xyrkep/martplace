@@ -159,4 +159,14 @@ button {
             left: -5px;
         }
     }
+
+    &-likes {
+        &::before {
+            color: $violet;
+        }
+    }
+
+    &-purchases {
+        color: $btn;
+    }
 }
