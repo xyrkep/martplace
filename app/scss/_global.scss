@@ -75,3 +75,88 @@ button {
         opacity: 0.5;
     }
 }
+
+.item-info {
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 17px;
+}
+
+.item-designer {
+    color: #000;
+    transition: all 0.3s;
+
+    img {
+        display: inline-block;
+    }
+
+    &:hover {
+        opacity: 0.5;
+    }
+}
+
+.item {
+
+    &-avatar,
+    &-icon {
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        vertical-align: middle;
+    }
+
+    &-platform {
+        color: $violet;
+        transition: all 0.3s;
+
+        img {
+            display: inline-block;
+        }
+
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+
+    &-icon {
+        margin-left: 10px;
+        width: 16px;
+        height: 16px;
+    }
+
+    &-data {
+        display: flex;
+        justify-content: flex-start;
+        border-top: 1px solid #ececec;
+        padding: 25px 0;
+        font-size: 15px;
+    }
+
+    &-price {
+        @include f500;
+        border-radius: 16px;
+        background-color: rgba(#0674ec, 0.1);
+        color: #fff;
+        padding: 6px 8px;
+        font-size: 15px;
+    }
+
+    &-likes,
+    &-purchases {
+        padding: 6px 18px;
+        position: relative;
+
+        &::before {
+            font-size: 15px;
+            position: absolute;
+            left: -5px;
+        }
+    }
+}

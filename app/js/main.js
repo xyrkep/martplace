@@ -22,8 +22,8 @@ $(function () {
 
     $('.weekly__slider').slick({
 
-        prevArrow: '<button class="slick-arrow slick-prev lnr-chevron-left"></button>',
-        nextArrow: '<button class="slick-arrow slick-next lnr-chevron-right"></button>',
+        prevArrow: '<button class="slick-arrow slick-prev lnr lnr-chevron-left"></button>',
+        nextArrow: '<button class="slick-arrow slick-next lnr lnr-chevron-right"></button>',
 
     });
 
