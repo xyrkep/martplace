@@ -373,7 +373,8 @@
 }
 
 .weekly__slider {
-    &-item {
+
+    &-box {
         display: flex;
         justify-content: center;
     }
@@ -390,6 +391,7 @@
         font-size: 24px;
         line-height: 30px;
         margin-bottom: 20px;
+        position: relative;
     }
 
     &-info {
@@ -508,6 +510,33 @@
 
 .rate-star {
     margin-top: 7px;
+}
+
+.slick-arrow {
+    position: absolute;
+    top: -126px;
+    background-color: #7347c1;
+    padding: 12px 20px;
+    border: none;
+    outline: none;
+
+    &::before {
+        font-family: 'Linearicons-Free';
+        font-size: 14px;
+        color: #fff;
+    }
+}
+
+.slick-prev {
+    right: 84px;
+    border-bottom-left-radius: 23px;
+    border-top-left-radius: 23px;
+}
+
+.slick-next {
+    right: 30px;
+    border-bottom-right-radius: 23px;
+    border-top-right-radius: 23px;
 }
 
 //end slider weekly featured products
