@@ -31,6 +31,7 @@ body {
 
 button {
     cursor: pointer;
+    border: none;
 }
 
 input,
@@ -43,4 +44,34 @@ button {
     max-width: 1170px;
     padding: 0 15px;
     margin: 0 auto;
+}
+
+.title {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(108, 111, 115, 0.1);
+    border-radius: 4px;
+    font-size: 30px;
+    line-height: 35px;
+    padding: 38px 29px 37px;
+    margin-bottom: 50px;
+}
+
+.standard__btn {
+    border-radius: 16px;
+    background-color: #f1f3f6;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 7px 21px 7px;
+    color: #747b86;
+    transition: all 0.3s;
+
+    &.active {
+        background-color: $btn;
+        color: #fff;
+        @include f500;
+    }
+
+    &:hover {
+        opacity: 0.5;
+    }
 }
