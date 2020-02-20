@@ -512,6 +512,12 @@
 
     &-btn {
         margin-left: 10px;
+
+        &.mixitup-control-active {
+            background-color: $btn;
+            color: #fff;
+            @include f500;
+        }
     }
 }
 
@@ -581,9 +587,6 @@
         transition: all 0.3s;
     }
 
-
-
-
     &-description {
         padding: 25px 30px 0px;
     }
@@ -627,6 +630,12 @@
         padding: 19px 32px;
         border-radius: 28px;
         font-size: 16px;
+
+         &.mixitup-control-active {
+            background-color: $btn;
+            color: #fff;
+            @include f500;
+        }
     }
 }
 
