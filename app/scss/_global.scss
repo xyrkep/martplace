@@ -21,6 +21,16 @@ li {
     list-style: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0;
+}
+
 body {
     font-family: 'Quicksand', sans-serif;
     font-size: 16px;
@@ -44,6 +54,11 @@ button {
     max-width: 1170px;
     padding: 0 15px;
     margin: 0 auto;
+}
+
+.jq-ry-container .jq-ry-group-wrapper .jq-ry-group svg {
+    stroke: #ffc000;
+    stroke-width: 25px;
 }
 
 .title {

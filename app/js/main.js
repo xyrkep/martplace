@@ -15,17 +15,21 @@ $(function () {
     });
 
     $('.rate-star').rateYo({
-        rating: 4.5,
+        rating: 3.5,
         starWidth: "14px",
-        readOnly: true
+        readOnly: true,
+        normalFill: "#fff",
+        ratedFill: "#ffc000"
     });
+
+
 
     $('.weekly__slider').slick({
-
         prevArrow: '<button class="slick-arrow slick-prev lnr lnr-chevron-left"></button>',
         nextArrow: '<button class="slick-arrow slick-next lnr lnr-chevron-right"></button>',
-
     });
+
+    $('select').styler();
 
     var mixer = mixitup('.newest__items');
 
