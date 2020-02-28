@@ -15,18 +15,24 @@ $(function () {
     });
 
     $('.rate-star').rateYo({
-        rating: 3.5,
+        rating: 4.5,
         starWidth: "14px",
         readOnly: true,
         normalFill: "#fff",
-        ratedFill: "#ffc000"
+        ratedFill: "#ffc000",
+        spacing: "3px"
     });
-
-
 
     $('.weekly__slider').slick({
         prevArrow: '<button class="slick-arrow slick-prev lnr lnr-chevron-left"></button>',
         nextArrow: '<button class="slick-arrow slick-next lnr lnr-chevron-right"></button>',
+    });
+
+
+    $(window).on("load", function () {
+        $(".weekly__slider-text").mCustomScrollbar({
+            theme: "inset-2-dark"
+        });
     });
 
     $('select').styler();
