@@ -300,7 +300,6 @@
         color: #000;
         margin-right: 15px;
         margin-bottom: 16px;
-
     }
 
     &-details {
@@ -314,6 +313,12 @@
         color: #0674ec;
         font-size: 16px;
         padding: 4px 8px 3px;
+    }
+
+    &-type {
+        .item-icon {
+            margin-left: 0;
+        }
     }
 }
 
