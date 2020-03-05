@@ -42,9 +42,9 @@ $(function () {
     });
 
     $('.header__user-item').hover(function () {
-        $('.drop__menu').addClass('animated fadeInRight');
+        $('.drop__menu').addClass('animated fadeIn');
     }, function () {
-        $('.drop__menu').removeClass('animated fadeInRight');
+        $('.drop__menu').removeClass('animated fadeIn');
     });
 
 
