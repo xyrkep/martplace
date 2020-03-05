@@ -28,12 +28,25 @@ $(function () {
         nextArrow: '<button class="slick-arrow slick-next lnr lnr-chevron-right"></button>',
     });
 
-
     $(window).on("load", function () {
         $(".weekly__slider-text").mCustomScrollbar({
             theme: "inset-2-dark"
         });
     });
+
+
+    $('.menu__list-item').hover(function () {
+        $('.circle__menu').addClass('animated fadeInLeft');
+    }, function () {
+        $('.circle__menu').removeClass('animated fadeInLeft');
+    });
+
+    $('.header__user-item').hover(function () {
+        $('.drop__menu').addClass('animated fadeInRight');
+    }, function () {
+        $('.drop__menu').removeClass('animated fadeInRight');
+    });
+
 
     $('select').styler();
 

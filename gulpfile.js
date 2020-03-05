@@ -30,7 +30,8 @@ gulp.task('style', function () {
         'node_modules/slick-carousel/slick/slick.css',
         'node_modules/rateyo/src/jquery.rateyo.css',
         'node_modules/magnific-popup/dist/magnific-popup.css',
-        'node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css'
+        'node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css',
+        'node_modules/animate.css/animate.css'
 
 
     ])
@@ -46,7 +47,8 @@ gulp.task('script', function () {
         'node_modules/magnific-popup/dist/jquery.magnific-popup.js',
         'node_modules/mixitup/dist/mixitup.js',
         'node_modules/jquery.formstyler/jquery.formstyler.js',
-        'node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.js'
+        'node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.js',
+        'node_modules/wow.js/dist/wow.js'
     ])
         .pipe(concat('libs.min.js'))
         .pipe(uglify())
