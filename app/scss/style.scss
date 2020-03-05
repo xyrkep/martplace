@@ -432,7 +432,8 @@
     }
 }
 
-.user__menu {
+.user__menu,
+.circle__menu {
     display: none;
     position: absolute;
     top: 99px;
@@ -493,7 +494,13 @@
         font-size: 15px;
         font-weight: 500;
         color: #333;
-        text-transform: uppercase;
+        position: relative;
+
+        &:hover {
+            .circle__menu {
+                display: block;
+            }
+        }
     }
 
     &-item + &-item {
@@ -501,10 +508,26 @@
     }
 
     &-link {
+        text-transform: uppercase;
+        padding-bottom: 30px;
+        padding-top: 30px;
         transition: all 0.3s;
 
         &:hover {
             color: $btn;
+        }
+    }
+}
+
+.circle__menu {
+    top: 79px;
+    left: 0;
+
+    ul {
+        padding: 20px;
+
+        li {
+            padding: 14px 10px;
         }
     }
 }
