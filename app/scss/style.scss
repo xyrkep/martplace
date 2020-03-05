@@ -140,16 +140,84 @@
     align-items: center;
 }
 
-
-.messages__box {
+.messages__box,
+.notification__box,
+.cart__box,
+.user__box {
     position: relative;
+    transition: all 0.3s;
 
     &:hover {
-        .messages__menu {
+
+        .messages__menu,
+        .notification__menu,
+        .cart__menu,
+        .user__menu {
             display: block;
         }
     }
 }
+
+.notification__menu {
+    display: none;
+    position: absolute;
+    top: 99px;
+    left: -23px;
+    z-index: 3;
+    box-shadow: 0 5px 40px rgba(82, 85, 90, 0.2);
+    border-top: 1px solid $btn;
+    border-radius: 0 0 3px 3px;
+    background-color: #fff;
+}
+
+.notification__title {
+    margin-right: 135px;
+}
+
+.notification__item-info {
+    font-size: 15px;
+    line-height: 20px;
+    margin-top: 18px;
+}
+
+.notification__item-name {
+    @include f500;
+    font-size: 16px;
+    color: #333333;
+}
+
+.notification__item-act {
+    color: #747a86;
+}
+
+.notification__item-template {
+    color: $btn;
+    line-height: 22px;
+}
+
+.notification__item-date {
+    color: #747a86;
+    font-size: 14px;
+    line-height: 15px;
+    margin-bottom: 18px;
+    margin-top: 5px;
+}
+
+.notification__item-icon {
+    margin-right: 20px;
+
+    span {
+        border-radius: 50%;
+        background-color: rgba(#7346c0, 0.1);
+        font-size: 15px;
+        padding: 9px 8px;
+
+        &.lnr::before {
+            padding-left: 1px;
+        }
+    }
+}
+
 
 .messages__menu {
     display: none;
@@ -163,7 +231,8 @@
     background-color: #fff;
 }
 
-.messages__heading {
+.messages__heading,
+.notification__heading {
     display: flex;
     justify-content: space-between;
     padding: 24px 24px;
@@ -178,12 +247,14 @@
     margin-right: 156px;
 }
 
-.messages__link {
+.messages__link,
+.notification__link {
     color: $btn;
     font-size: 15px;
 }
 
-.messages__item {
+.messages__item,
+.notification__item {
     display: flex;
     align-items: center;
     transition: all 0.3s;
@@ -197,7 +268,8 @@
     }
 }
 
-.messages__item-avatar {
+.messages__item-avatar,
+.notification__item-avatar {
     min-width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -205,7 +277,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    margin: 20px 25px;
+    margin: 20px 15px 20px 25px;
 }
 
 .messages__item-content {
@@ -240,19 +312,6 @@
 
 .messages__item-text {
     color: #555;
-}
-
-
-.cart__box {
-    position: relative;
-
-    &:hover {
-        transition: all 3s;
-
-        .cart__menu {
-            display: block;
-        }
-    }
 }
 
 .cart__menu {
@@ -371,18 +430,6 @@
     .cart__btn-checkout {
         border-radius: 0 0 3px;
         background-color: #0674ec;
-    }
-}
-
-.user__box {
-    position: relative;
-
-    &:hover {
-        transition: all 3s;
-
-        .user__menu {
-            display: block;
-        }
     }
 }
 
