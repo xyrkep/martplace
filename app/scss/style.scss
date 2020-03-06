@@ -464,7 +464,7 @@
         }
     }
 
-    &-link {
+    a {
         @include f400;
         font-size: 15px;
         color: #54667a;
@@ -478,6 +478,37 @@
     }
 }
 
+.circle__menu.pages__menu {
+    left: -446px;
+}
+
+.pages__menu-content {
+    display: flex;
+}
+
+.pages__menu-item {
+    & + & {
+        margin-left: 12px;
+    }
+}
+
+.pages__menu-title {
+    @include f500;
+    font-size: 16px;
+    line-height: 18px;
+    margin-top: 30px;
+    margin-left: 30px;
+    padding-bottom: 17px;
+    border-bottom: 1px solid #e8ebf0;
+}
+
+.pages__menu-content {
+    padding-right: 20px;
+}
+
+.pages__menu-list.column__multi {
+    column-count: 2;
+}
 
 .header__bottom-inner {
     display: flex;
@@ -530,6 +561,11 @@
             padding: 14px 10px;
         }
     }
+}
+
+.pages__menu {
+    position: absolute;
+    z-index: 2;
 }
 
 .header__search {
@@ -1073,10 +1109,5 @@
         }
     }
 }
-
-
-
-
-
 
 //end newest release products

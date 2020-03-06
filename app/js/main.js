@@ -36,9 +36,9 @@ $(function () {
 
 
     $('.menu__list-item').hover(function () {
-        $('.circle__menu').addClass('animated fadeInLeft');
+        $('.circle__menu').addClass('animated fadeIn');
     }, function () {
-        $('.circle__menu').removeClass('animated fadeInLeft');
+        $('.circle__menu').removeClass('animated fadeIn');
     });
 
     $('.header__user-item').hover(function () {
