@@ -56,6 +56,12 @@ button {
     margin: 0 auto;
 }
 
+.container-fluid {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
 .jq-ry-container .jq-ry-group-wrapper .jq-ry-group svg {
     stroke: #ffc000;
     stroke-width: 30px;
