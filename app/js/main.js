@@ -28,6 +28,16 @@ $(function () {
         nextArrow: '<button class="slick-arrow slick-next lnr lnr-chevron-right"></button>',
     });
 
+    $('.followers__slider').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        //        variableWidth: true,
+        //        centerMode: false,
+        prevArrow: '<button class="slick-arrow slick-prev lnr lnr-chevron-left"></button>',
+        nextArrow: '<button class="slick-arrow slick-next lnr lnr-chevron-right"></button>'
+    });
+
     $(window).on("load", function () {
         $(".weekly__slider-text").mCustomScrollbar({
             theme: "inset-2-dark"
@@ -47,8 +57,15 @@ $(function () {
         $('.drop__menu').removeClass('animated fadeIn');
     });
 
+    $('.newest__item-images').hover(function () {
+        $('.newest__item-more').addClass('animated fadeIn');
+    }, function () {
+        $('.newest__item-more').removeClass('animated fadeIn');
+    });
 
     $('select').styler();
+
+    new WOW().init();
 
     var mixer = mixitup('.newest__items');
 
