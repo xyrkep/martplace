@@ -39,6 +39,25 @@ body {
     color: $text;
 }
 
+html,
+body {
+    height: 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+.footer {
+    flex: 0 0 auto;
+}
+
 button {
     cursor: pointer;
     border: none;
@@ -190,5 +209,54 @@ button {
 
     &-purchases {
         color: $btn;
+    }
+}
+
+.breadcrumbs {
+    background-color: #6c6c6c;
+    background-image: linear-gradient(to left, #0d3ef2 0%, #4c1f9c 100%);
+    opacity: 0.9;
+
+    &__inner {
+        padding: 58px 0 60px;
+        overflow: hidden;
+        color: #fff;
+    }
+
+    &__list {
+        margin-bottom: 22px;
+
+        li {
+            display: inline-block;
+            position: relative;
+            font-size: 15px;
+
+            & + li {
+                padding-left: 20px;
+
+                &::before {
+                    content: '/';
+                    position: absolute;
+                    left: 5px;
+                }
+            }
+
+            &:last-child {
+
+                span {
+                    color: #bfcad7;
+                }
+            }
+        }
+
+        a {
+            color: #fff;
+        }
+    }
+
+    &__title {
+        @include f500;
+        font-size: 30px;
+        line-height: 34px;
     }
 }

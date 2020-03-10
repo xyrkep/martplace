@@ -1154,6 +1154,11 @@
     .slick-arrow {
         background-color: $btn;
     }
+
+    .newest__item {
+        max-width: 360px;
+        margin-right: 29px;
+    }
 }
 
 //end followers feed
@@ -1437,6 +1442,7 @@
 
 .news__item {
     max-width: 361px;
+    background-color: #fff;
     box-shadow: 0 2px 50px rgba(0, 0, 0, 0.08);
     border-radius: 4px;
 
@@ -1478,7 +1484,18 @@
     line-height: 18px;
     color: #999;
     border-top: 1px solid #ececec;
-    padding: 23px 29px;
+    padding: 23px 29px 18px;
+    position: relative;
+
+    &::after {
+        position: absolute;
+        content: '';
+        display: inline-block;
+        height: 40px;
+        border-left: 1px solid #ececec;
+        left: 50%;
+        top: 10px;
+    }
 }
 
 .news__item-date,
@@ -1509,37 +1526,45 @@
     margin-right: 30px;
 }
 
-.news__item-date {
-    border-right: 1px solid #ececec;
-    padding-right: 40px;
-}
-
 //end latest news
 //start guarantee&support
 
 .support__items {
     display: flex;
+    justify-content: center;
     align-items: center;
     text-align: center;
     padding: 60px 0;
+    position: relative;
+
+    &::after {
+        position: absolute;
+        content: '';
+        display: inline-block;
+        height: 100%;
+        border-left: 1px solid #ececec;
+        left: 50%;
+        top: 0;
+    }
 }
 
 .support__item-guarantee {
-    margin-left: auto;
+    margin-left: 80px;
     margin-right: 130px;
 }
 
 .support__item-support {
-    margin-right: auto;
+    margin-right: 145px;
     margin-left: 135px;
 }
 
 .support__item-image {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .support__item-text {
     font-size: 24px;
+    line-height: 30px;
     color: #000;
 }
 
@@ -1586,6 +1611,38 @@
 }
 
 //end join us
+//start terms and conditions
+
+.terms {
+    background-color: #eff1f5;
+
+    &__content {
+        padding: 60px 0 120px;
+    }
+
+    &__articles {
+        background-color: #fff;
+        padding-bottom: 80px;
+    }
+
+    &__article {
+        &-title {
+            font-size: 24px;
+            line-height: 32px;
+            color: #000;
+            padding: 35px 29px 25px 29px;
+            border-bottom: 1px solid #e8ebf0;
+        }
+
+        &-text {
+            line-height: 30px;
+            color: #555;
+            padding: 25px 41px 15px 29px;
+        }
+    }
+}
+
+//end terms and conditions
 //start footer
 
 .footer__top {
@@ -1742,7 +1799,7 @@
 
     &::before {
         position: absolute;
-        left: 15px;
+        left: 14px;
         top: 13px;
         color: #fff;
     }

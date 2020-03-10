@@ -32,10 +32,11 @@ $(function () {
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 1,
-        //        variableWidth: true,
-        //        centerMode: false,
+        variableWidth: true,
+        centerMode: false,
         prevArrow: '<button class="slick-arrow slick-prev lnr lnr-chevron-left"></button>',
-        nextArrow: '<button class="slick-arrow slick-next lnr lnr-chevron-right"></button>'
+        nextArrow: '<button class="slick-arrow slick-next lnr lnr-chevron-right"></button>',
+        rows: '0'
     });
 
     $(window).on("load", function () {
